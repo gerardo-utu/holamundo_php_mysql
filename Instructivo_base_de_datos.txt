@@ -1,0 +1,62 @@
+  ___ ___ ___   _   ___   _____ _   _   ___  ___ _ 
+ / __| _ \ __| /_\ | _ \ |_   _| | | | |   \| _ ) |
+| (__|   / _| / _ \|   /   | | | |_| | | |) | _ \_|
+ \___|_|_\___/_/ \_\_|_\   |_|  \___/  |___/|___(_)
+
+
+Instructivo – Crear la base de datos con phpMyAdmin
+
+==============================
+Paso 1 – Ingresar a phpMyAdmin
+a. Abrí tu navegador.
+
+b. Escribí en la barra de direcciones:
+
+http://localhost/phpmyadmin
+
+c. Esperá a que cargue la página.
+
+
+==============================
+Paso 2 – Crear la base de datos
+
+a. En el menú de la izquierda, hacé clic en "Nueva".
+
+b. En el campo "Nombre de la base de datos", escribí:
+
+"prueba" (sin las comillas :) , así se va a llamar la db por ahora)
+
+c. Asegurate de que el cotejamiento diga utf8mb4_general_ci.
+
+d. Hacé clic en "Crear".
+
+
+==============================
+Paso 3 – Crear la tabla
+
+a. Ahora estás dentro de la base de datos prueba.
+
+b. En el campo que dice "Nombre de la tabla", escribí:
+
+"personas"
+
+c. En "Número de columnas", escribí 2, y hacé clic en "Continuar".
+
+
+==============================
+Paso 4 – Definir las columnas
+
+Completá los datos así:
+
+| Nombre de la columna | Tipo    | Longitud | A\_I | Índice  |
+| -------------------- | ------- | -------- | ---- | ------- |
+| id                   | INT     | 11       | X    | PRIMARY |
+| nombre               | VARCHAR | 100      |      |         |
+
+(En la columna id, activá la casilla A_I (auto_increment). Y en la columna id, seleccioná PRIMARY como índice.)
+
+Después, hacé clic en "Guardar".
+
+----------------------------------------------------------------------------------------------------
+Con eso, tu base de datos queda lista para usar con el código PHP que tenés disponible en este repo.
+----------------------------------------------------------------------------------------------------
